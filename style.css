@@ -79,7 +79,8 @@ body {
   font-weight: var(--fw-light);
   line-height: 1.5;
   text-align: center;
-  padding: 2rem;
+  user-select: none;
+  padding: 4rem 2rem 1rem;
   min-height: 100svh;
 
   display: grid;
@@ -93,6 +94,7 @@ header {
 /* Typography */
 .intro__title {
   font-size: var(--fs-600);
+  font-weight: var(--fw-light);
 }
 
 .bold-accent-color {
@@ -117,17 +119,29 @@ header {
 .mail-sub {
   flex-direction: column;
   justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.user-input {
+  transition: grid-template-rows 350ms ease-in-out;
+  grid-template-rows: min-content 1fr;
+}
+
+.user-input:has([aria-hidden="true"]) {
+  grid-template-rows: min-content 0fr;
 }
 
 .email-input {
   width: 100%;
-  color: var(--clr-secondary-200);
   border-radius: 100vh;
   font-size: var(--fs-200);
   padding: 0.6rem 1.5rem;
   border: 1px solid var(--clr-secondary-200);
+}
+
+.error-message {
+  overflow: hidden;
+  font-style: italic;
 }
 
 .btn {
@@ -196,6 +210,10 @@ header {
   font-size: var(--fs-100);
 }
 
+.invalid-email {
+  color: var(--clr-secondary-400);
+}
+
 @media (min-width: 45em) {
   body {
     font-size: var(--fs-500);
@@ -207,10 +225,18 @@ header {
 
   .mail-sub {
     flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
   }
 
   .email-input {
     font-size: 1rem;
+  }
+
+  .error-message {
+    font-size: var(--fs-200);
+    text-align: start;
+    padding-left: 1.5rem;
   }
 
   .btn {
@@ -218,7 +244,7 @@ header {
     flex-shrink: 0;
   }
 
-  .email-input {
+  .user-input {
     flex-grow: 1;
   }
 }

@@ -32,8 +32,12 @@
         </div>
 
         <div class="mail-sub flex-group">
-          <input type="email" name="email-input" id="email-input" class="email-input" placeholder="Your email address">
-          <button class="btn btn--notify">Notify Me</button>
+          <div class="user-input grid-flow" data-spacing="small">
+            <input type="email" name="email-input" id="email-input" class="email-input"
+              placeholder="Your email address">
+            <p class="error-message small-text" aria-hidden="true">Please provide a valid email address</p>
+          </div>
+          <button id="notify-btn" class="btn btn--notify">Notify Me</button>
         </div>
 
         <div class="hero-image">
@@ -43,7 +47,7 @@
     </section>
   </main>
   <footer>
-    <div class="footer-content grid-flow" data-spacing="large">
+    <div class="footer-content grid-flow">
       <ul class="social-list flex-group">
         <li class="social-item">
           <a class="social-link" href="#">
