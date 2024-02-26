@@ -122,8 +122,10 @@ header {
 }
 
 .email-input {
+  width: 100%;
   color: var(--clr-secondary-200);
   border-radius: 100vh;
+  font-size: var(--fs-200);
   padding: 0.6rem 1.5rem;
   border: 1px solid var(--clr-secondary-200);
 }
@@ -136,6 +138,7 @@ header {
   border: none;
   border-radius: 100vh;
   cursor: pointer;
+  box-shadow: 0 0.4rem 1rem var(--clr-secondary-200);
 }
 
 .footer-content {
@@ -154,13 +157,12 @@ header {
   display: inline-block;
   color: var(--clr-primary-600);
   border: 1px solid var(--clr-secondary-200);
-  padding: 0.4em 0.7em;
+  padding: 0.4rem 0.8rem;
   border-radius: 50%;
 }
 
 .social-icon {
-  font-size: 1rem;
-  margin-top: 0.2em;
+  font-size: var(--fs-200);
 }
 
 /* Utility classes */
@@ -188,4 +190,35 @@ header {
 
 .grid-flow[data-spacing="large"] {
   gap: 2rem;
+}
+
+.small-text {
+  font-size: var(--fs-100);
+}
+
+@media (min-width: 45em) {
+  body {
+    font-size: var(--fs-500);
+  }
+
+  .intro__title {
+    font-size: var(--fs-900);
+  }
+
+  .mail-sub {
+    flex-direction: row;
+  }
+
+  .email-input {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .email-input {
+    flex-grow: 1;
+  }
 }
