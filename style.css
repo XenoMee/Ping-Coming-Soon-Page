@@ -81,3 +81,6 @@ body {
 }
 
 /* Typography */
+.intro__title {
+  font-size: var(--fs-600);
+}
