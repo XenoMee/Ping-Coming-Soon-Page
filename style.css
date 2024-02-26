@@ -82,6 +82,10 @@ body {
   min-height: 100svh;
 }
 
+header {
+  padding-block: 1.5rem;
+}
+
 /* Typography */
 .intro__title {
   font-size: var(--fs-600);
