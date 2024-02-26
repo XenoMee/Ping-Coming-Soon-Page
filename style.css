@@ -5,4 +5,7 @@
   --clr-secondary-400: hsl(354, 100%, 66%);
   --clr-neutral-600: hsl(0, 0%, 59%);
   --clr-neutral-900: hsl(209, 33%, 12%);
+
+  /* Font family */
+  --font-family-base: "Libre Franklin", sans-serif;
 }
