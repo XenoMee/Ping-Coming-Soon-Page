@@ -97,9 +97,14 @@ body {
 }
 
 /* Layout */
+.container {
+  max-width: 50rem;
+  /* margin-inline: auto; */
+}
 
 /* Utility classes */
 .flex-group {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
