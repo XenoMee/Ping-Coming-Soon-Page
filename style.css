@@ -142,6 +142,7 @@ header {
 .error-message {
   overflow: hidden;
   font-style: italic;
+  margin-block: 0.3rem;
 }
 
 .btn {
@@ -153,6 +154,9 @@ header {
   border-radius: 100vh;
   cursor: pointer;
   box-shadow: 0 0.4rem 1rem var(--clr-secondary-200);
+}
+.btn:is(:hover, :focus) {
+  background-color: hsl(223, 87%, 63%, 0.8);
 }
 
 .footer-content {
@@ -173,6 +177,11 @@ header {
   border: 1px solid var(--clr-secondary-200);
   border-radius: 50%;
   padding: 0.5em 0.8em;
+}
+
+.social-link:is(:hover, :focus) {
+  background-color: var(--clr-primary-600);
+  color: #fff;
 }
 
 .social-icon {
@@ -249,5 +258,9 @@ header {
 
   .user-input {
     flex-grow: 1;
+  }
+
+  .social-icon {
+    font-size: var(--fs-500);
   }
 }
