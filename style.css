@@ -144,8 +144,6 @@ main {
 /* Utility classes */
 .flex-group {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .grid-flow {
