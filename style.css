@@ -113,9 +113,10 @@ header {
   margin-inline: auto;
 }
 
-/* .mail-sub {
+.mail-sub {
   justify-content: center;
-} */
+  gap: 1rem;
+}
 
 /* Utility classes */
 .flex-group {
