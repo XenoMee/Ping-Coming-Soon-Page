@@ -79,7 +79,7 @@ body {
   font-weight: var(--fw-light);
   line-height: 1.5;
   text-align: center;
-  padding-inline: 2rem;
+  padding: 2rem;
   min-height: 100svh;
 
   display: grid;
@@ -87,7 +87,7 @@ body {
 }
 
 header {
-  padding-block: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /* Typography */
@@ -175,6 +175,10 @@ header {
 
 .flex-group {
   display: flex;
+}
+
+.grid-flow[data-spacing="small"] {
+  gap: 0.5rem;
 }
 
 .grid-flow {
