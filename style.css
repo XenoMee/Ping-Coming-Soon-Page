@@ -91,6 +91,10 @@ header {
   align-self: end;
 }
 
+main {
+  align-self: start;
+}
+
 /* Typography */
 .intro__title {
   font-size: var(--fs-600);
@@ -111,7 +115,7 @@ header {
 }
 
 .container {
-  max-width: 50rem;
+  max-width: 40rem;
   margin-inline: auto;
 }
 
