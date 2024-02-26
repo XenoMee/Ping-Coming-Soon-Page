@@ -80,6 +80,9 @@ body {
   line-height: 1.5;
   text-align: center;
   min-height: 100svh;
+
+  display: grid;
+  align-items: center;
 }
 
 header {
@@ -110,6 +113,10 @@ header {
   margin-inline: auto;
 }
 
+/* .mail-sub {
+  justify-content: center;
+} */
+
 /* Utility classes */
 .flex-group {
   display: flex;
@@ -120,4 +127,8 @@ header {
 .grid-flow {
   display: grid;
   gap: 1rem;
+}
+
+.grid-flow[data-spacing="large"] {
+  gap: 2rem;
 }
