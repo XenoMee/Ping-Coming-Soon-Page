@@ -97,6 +97,10 @@ body {
 }
 
 /* Layout */
+.header__logo {
+  margin-inline: auto;
+}
+
 .container {
   max-width: 50rem;
   margin-inline: auto;
