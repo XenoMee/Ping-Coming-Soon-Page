@@ -88,11 +88,6 @@ body {
 
 header {
   padding-block: 1.5rem;
-  align-self: end;
-}
-
-main {
-  align-self: start;
 }
 
 /* Typography */
@@ -141,6 +136,31 @@ main {
   border: none;
   border-radius: 100vh;
   cursor: pointer;
+}
+
+.footer-content {
+  margin-top: 4rem;
+  place-items: center;
+}
+
+.social-list {
+  padding: 0;
+  list-style: none;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.social-link {
+  display: inline-block;
+  color: var(--clr-primary-600);
+  border: 1px solid var(--clr-secondary-200);
+  padding: 0.4em 0.7em;
+  border-radius: 50%;
+}
+
+.social-icon {
+  font-size: 1rem;
+  margin-top: 0.2em;
 }
 
 /* Utility classes */
