@@ -120,6 +120,7 @@ main {
 }
 
 .mail-sub {
+  flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
 }
@@ -127,7 +128,7 @@ main {
 .email-input {
   color: var(--clr-secondary-200);
   border-radius: 100vh;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.5rem;
   border: 1px solid var(--clr-secondary-200);
 }
 
