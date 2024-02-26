@@ -118,6 +118,16 @@ header {
   gap: 1rem;
 }
 
+.btn {
+  background-color: var(--clr-primary-600);
+  color: #fff;
+  font-weight: var(--fw-semibold);
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 100vh;
+  cursor: pointer;
+}
+
 /* Utility classes */
 .flex-group {
   display: flex;
