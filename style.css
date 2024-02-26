@@ -119,10 +119,10 @@ header {
 .mail-sub {
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
 }
 
 .user-input {
+  display: grid;
   transition: grid-template-rows 350ms ease-in-out;
   grid-template-rows: min-content 1fr;
 }
@@ -171,12 +171,14 @@ header {
   display: inline-block;
   color: var(--clr-primary-600);
   border: 1px solid var(--clr-secondary-200);
-  padding: 0.4rem 0.8rem;
   border-radius: 50%;
+  padding: 0.5em 0.8em;
 }
 
 .social-icon {
   font-size: var(--fs-200);
+  width: 1em;
+  aspect-ratio: 1 / 1;
 }
 
 /* Utility classes */
@@ -227,6 +229,7 @@ header {
     flex-direction: row;
     align-items: baseline;
     gap: 1rem;
+    margin-bottom: 2rem;
   }
 
   .email-input {
