@@ -8,4 +8,9 @@
 
   /* Font family */
   --font-family-base: "Libre Franklin", sans-serif;
+
+  /* Font weight */
+  --fw-light: 300;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 }
