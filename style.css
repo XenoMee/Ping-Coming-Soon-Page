@@ -69,3 +69,13 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* General */
+body {
+  background-color: #fff;
+  color: var(--clr-neutral-600);
+  font-family: var(--font-family-base);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-light);
+  min-height: 100svh;
+}
