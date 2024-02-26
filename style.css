@@ -97,3 +97,9 @@ body {
 }
 
 /* Layout */
+
+/* Utility classes */
+.flex-group {
+  display: flex;
+  align-items: center;
+}
