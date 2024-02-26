@@ -90,3 +90,7 @@ body {
   color: var(--clr-neutral-900);
   font-weight: var(--fw-bold);
 }
+
+.intro__text {
+  color: var(--clr-neutral-900);
+}
