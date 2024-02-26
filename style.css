@@ -85,3 +85,8 @@ body {
 .intro__title {
   font-size: var(--fs-600);
 }
+
+.bold-accent-color {
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-bold);
+}
