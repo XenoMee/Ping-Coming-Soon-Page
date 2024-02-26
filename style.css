@@ -121,7 +121,14 @@ main {
 
 .mail-sub {
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
+}
+
+.email-input {
+  color: var(--clr-secondary-200);
+  border-radius: 100vh;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--clr-secondary-200);
 }
 
 .btn {
